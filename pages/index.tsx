@@ -1,14 +1,23 @@
-import { NextPage } from "next";
 import { FunctionComponent } from "react";
+import Header from "../src/components/header/header";
+import Intro from "../src/components/home/intro";
+import Layout from "../src/components/layout";
+import Work from "../src/components/home/work";
+import ContactUs from "../src/components/home/contact";
+import Footer from "../src/components/footer/footer";
 
 interface HomeProps{
 }
 
 const Home:FunctionComponent<HomeProps> = () => {
     return(
-        <div>
-            <h1 className="bg-sky-500">Welcome to Prince</h1>
-        </div>
+        <Layout title="Introduction">
+            <Header />
+            <Intro />
+            <Work />
+            <ContactUs />
+            <Footer />
+        </Layout>
     )
 }
 
