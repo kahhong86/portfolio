@@ -10,7 +10,7 @@ const Work:FunctionComponent<WorkProps> = () => {
     return(
         <div>
             <h2 className="my-5">Past Experiences</h2>
-            {WorkList.reverse().slice(0,3).map(({company,snippet,date,role,companyLogo},index)=>{
+            {[...WorkList].reverse().slice(0,3).map(({company,snippet,date,role,companyLogo},index)=>{
                 return(
                     <div key={index} className="mb-5 pb-5 border-b border-grey md:flex">
                         <div className="md:flex-1">
