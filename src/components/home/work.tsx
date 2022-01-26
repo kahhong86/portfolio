@@ -8,30 +8,33 @@ interface WorkProps{}
 
 const Work:FunctionComponent<WorkProps> = () => {
     return(
-        <div>
-            <h2 className="my-5">Past Experiences</h2>
+        <div className="md:pt-10">
+            <h2 className="my-5 text-center">Past Experiences</h2>
             {/* WorkList must be wrap with a [] to prevent mutation on other pages */}
-            {[...WorkList].reverse().slice(0,3).map(({company,snippet,date,role,companyLogo},index)=>{
-                return(
-                    <div key={index} className="mb-5 pb-5 border-b border-grey md:flex">
-                        <div className="md:flex-1">
-                            <Image 
-                                width="100"
-                                height="100"
-                                src={assetsUrl + companyLogo}
-                                alt={company}
-                            />
-                            <div className="text-lg font-bold">{company}</div>
-                            <div>{date}</div>
-                            <div>{role}</div>    
+            <div className="md:flex">
+                {[...WorkList].reverse().slice(0,3).map(({company,snippet,date,role,companyLogo},index)=>{
+                    return(
+                        <div key={index} className="mb-5 pb-5 border-b border-grey md:border-b-0 md:flex-1 md:text-center md:px-5">
+                            <div className="">
+                                <Image 
+                                    width="100"
+                                    height="100"
+                                    src={assetsUrl + companyLogo}
+                                    alt={company}
+                                />
+                                <div className="text-lg font-bold">{company}</div>
+                                <div>{date}</div>
+                                <div>{role}</div>    
+                            </div>
+                            <div className="mt-5 md:flex-1">
+                                {snippet}
+                            </div>
                         </div>
-                        <div className="mt-5 md:mt-0 md:flex-1">
-                            {snippet}
-                        </div>
-                    </div>
-                )
-            })}
-            <div className="mb-10 pb-10 border-b-2">
+                    )
+                })}
+            </div>
+            
+            <div className="mb-10 pb-10 border-b-2 md:text-center">
                 <Link href="/past-experiences">
                     <a className="inline-block text-sky-500">
                         Click here
