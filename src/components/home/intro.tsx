@@ -20,7 +20,7 @@ const Intro:FunctionComponent<IntroProps> = () => {
                     </div>
                     <div className="md:flex-1">
                         <div className="text-center md:text-left">
-                            <h1 className="text-3xl my-5 font-bold">Welcome to <br />   {`Kah Hong's Domain`}</h1>
+                            <h1 className="text-4xl my-5 font-bold">Welcome to <br />   {`Kah Hong's Domain`}</h1>
                             <p>
                                 {`I'm a frontend developer since 2009. Graduated in Malaysia and started working in Singapore. Started off as an UI/UX designer, visual designer during my internship. Then found my line of work in frontend development where I can still put my visual and UI design skills on the website. `}
                             </p>
