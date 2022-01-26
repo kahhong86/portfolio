@@ -12,4 +12,10 @@ export const NavigationItem = [
         desc: "Past Experiences",
         small_name:"/navigation/logo-experiences.png",
     },
+    {
+        name: "Skilltree",
+        url: "/skilltree",
+        desc: "Skilltree",
+        small_name:"/navigation/logo-skilltree.png",
+    },
 ]

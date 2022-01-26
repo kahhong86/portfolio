@@ -8,7 +8,6 @@ import { assetsUrl } from "../utils/backend_url";
 const PastExperiences:FunctionComponent = () => {
     return(
         <Layout title="Past Experiences">
-            <Header/>
             <h1 className="mb-5">Past Experiences</h1>
             {WorkList.map(({company,snippet,date,role,companyLogo},index)=>{
                 return(

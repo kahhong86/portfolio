@@ -12,7 +12,6 @@ interface HomeProps{
 const Home:FunctionComponent<HomeProps> = () => {
     return(
         <Layout title="Introduction">
-            <Header />
             <Intro />
             <Work />
             <ContactUs />

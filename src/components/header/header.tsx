@@ -12,7 +12,7 @@ const Header:FunctionComponent<HeaderProps> = () => {
     const router = useRouter();
 
     return(
-        <nav className="bg-black block fixed bottom-52 right-0 w-14 md:w-full z-10">
+        <nav className="bg-black block fixed bottom-52 md:bottom-auto md:top-0 right-0 w-14 md:w-full z-10">
             {NavigationItem.map(({name,url,small_name},index) => {
                 return(
                     <div className="md:inline-block" key={index}>
