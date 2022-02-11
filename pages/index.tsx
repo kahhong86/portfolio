@@ -7,11 +7,12 @@ import ContactUs from "../src/components/home/contact";
 import Footer from "../src/components/footer/footer";
 
 interface HomeProps{
+    base?:string,
 }
 
 const Home:FunctionComponent<HomeProps> = () => {
     return(
-        <Layout title="Introduction">
+        <Layout title="Introduction" layout="">
             <Intro />
             <Work />
             <ContactUs />

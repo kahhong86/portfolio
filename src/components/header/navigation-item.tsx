@@ -18,10 +18,10 @@ export const NavigationItem = [
         desc: "Skilltree",
         small_name:"/navigation/logo-skilltree.png",
     },
-    {
-        name: "Comic",
-        url: "/comic",
-        desc: "Comic",
-        small_name:"/navigation/logo-skilltree.png",
-    },
+    // {
+    //     name: "Comic",
+    //     url: "/comic",
+    //     desc: "Comic",
+    //     small_name:"/navigation/logo-skilltree.png",
+    // },
 ]

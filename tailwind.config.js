@@ -18,7 +18,10 @@ module.exports = {
 			fontFamily: {
 				sans: ["Raleway", ...defaultTheme.fontFamily.sans],
 				header: ["Raleway", ...defaultTheme.fontFamily.sans],
-			}
+			},
+			boxShadow: {
+				'heavy': 'inset 0 0 25px #000000'
+			},
 		},
 	},
 	variants: {},
