@@ -5,7 +5,9 @@ import { WorkList } from "../src/components/past-experiences/worklist";
 import Image from "next/image";
 import { assetsUrl } from "../utils/backend_url";
 
-const PastExperiences:FunctionComponent = () => {
+interface PastExperiencesProps{}
+
+const PastExperiences:FunctionComponent<PastExperiencesProps> = () => {
     return(
         <Layout title="Past Experiences">
             <div className="mx-auto max-w-screen-xl md:px-20">

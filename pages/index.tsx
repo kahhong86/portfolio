@@ -4,6 +4,7 @@ import Intro from "../src/components/home/intro";
 import Layout from "../src/components/layout";
 import Work from "../src/components/home/work";
 import ContactUs from "../src/components/home/contact";
+import Skill from "../src/components/home/skill";
 import Footer from "../src/components/footer/footer";
 
 interface HomeProps{
@@ -15,6 +16,7 @@ const Home:FunctionComponent<HomeProps> = () => {
         <Layout title="Introduction" layout="">
             <Intro />
             <Work />
+            <Skill />
             <ContactUs />
             <Footer />
         </Layout>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
+import { FunctionComponent } from "react";
 import Header from "../header/header";
 
 const Layout = ({children,title,layout="max-w-screen-xl"}) => {
-
     return(
         <div className="bg-base md:pt-12">
             <div className={`mx-auto ${layout}`}>
